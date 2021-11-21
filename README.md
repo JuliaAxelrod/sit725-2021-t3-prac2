@@ -14,3 +14,4 @@ Use buttons provided under "Useful Links" menu to invoke the functionality.
 Image with output is added to the repo
 
 Note: sit725-2021-t2-prac2 was created by accident
+Note: 000-code.js was written by me in 2020 and expanded further today to include Random Number and edge condition.
