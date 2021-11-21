@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .jumbotron {
+            text-align: center;
+        }
+
+        .jumbotron h1 {
+            font-size: 4.25em;
+        }
+
+        .jumbotron p {
+            font-size: 1.50em;
+        }
+
+        .row {
+            min-height: 10px;
+            margin-top: 1px;
+            margin-bottom: 0em;
+        }
+
+        .row div {
+            padding: 5px;
+            /*vertical-align: middle; */
+        }
+
+        #wrapper {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 100%;
+            margin-top: 3em;
+            background-color: #b3c7e6;
+        }
+
+        ul {
+            list-style-type: none;
+            font-size: 1.25em;
+            font-weight: bold;
+        }
+
+        .carousel-inner {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            margin: 100px;
+            transition: 0.6s ease;
+        }
+
+        .carousel .carousel-indicators li {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!--My Favourite Places in Antarctica-->
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <h1>My Favourite Places in Antarctica and Why I Want to Become the Best in Cyber Security</h1>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+
+        <!--Carousel-->
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <div id="newCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#newCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#newCarousel" data-slide-to="1"></li>
+                        <li data-target="#newCarousel" data-slide-to="2"></li>
+                    </ul>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="LoneIceberg_7292.JPG" alt="Antarctica on Mobile" style="width: 90%">
+                            <div class="carousel-caption">
+                                <h3 class="h3-responsive">Antarctica on Mobile</h3>
+                                <p>Antarctica on Mobile</p>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Iceberg_7292.JPG" alt="Iceberg" style="width:90%">
+                            <div class="carousel-caption">
+                                <h3 class="h3-responsive">Antarctica - Iceberg</h3>
+                                <p>Iceberg and humans</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Kayaking_7292.JPG" alt="Kayaking in Antractica" style="width:90%">
+                            <div class="carousel-caption">
+                                <h3 class="h3-responsive">Kayaking in Antractica</h3>
+                                <p>Yes, in March you can kayak in Antractica! </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#newCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#newCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+
+
+        <!--        <div class="container-fluid">-->
+        <div class="row">
+            <div class="col-sm-2 col-md-2 col-xs-2">
+
+                <nav>
+                    <h3> Useful Links</h3>
+                    <div class="btn-group-vertical">
+
+                        <button type="button" class="btn btn-primary"><a href="https://www.deakin.edu.au/"
+                                style="color:inherit">Deakin University</a></button>
+                        <button type="button" class="btn btn-primary"><a href="https://www.microsoft.com/"
+                                style="color:inherit">Microsoft</a></button>
+                        <button type="button" class="btn btn-primary"><a href="https://www.google.com/"
+                                style="color:inherit">Google</a></button>
+                        <button type="button" class="btn btn-primary"><a href="https://www.apple.com/"
+                                style="color:inherit">Apple</a></button>
+                        <button type="button" class="btn btn-primary"><a href="http://localhost:8080/timenow"
+                                style="color:inherit">Date and Time</a></button>
+                        <button type="button" class="btn btn-primary"><a href="http://localhost:8080/randomnow"
+                                style="color:inherit">Random Number</a></button>
+                        <button type="button" class="btn btn-primary"><a href="http://localhost:8080/powertable"
+                                style="color:inherit">Power 2 Table</a></button>
+                        <button type="button" class="btn btn-primary"><a href="http://localhost:8080/powertable/3/33"
+                                style="color:inherit">Power 3 Table</a></button>                                                                                                            
+                    </div>
+
+                </nav>
+            </div>
+
+
+
+            <div class="col-md-9 col-sm-9 col-xs-12">
+                <h3> Antarctica and Cyber Security, or why I need to be the best in my field.</h3>
+                <p>There is an incredible place on this planet, and it is my unrequited love - Antarctica. It's the single most mysterious, beautiful, dangerous, and inspiring continent. It holds the key to the climate change processes, marine biology mysteries, sea level rise, weather forecasts, health of humans and animals and much much more.
+                    Interestingly, it is an example of unique global selflessness. 
+                    <br>
+                    The Antarctic Treaty, signed by 53 countries already, declared Antarctica continent free of discord and set aside for science. Starting 1959, nations gave up territorial claims on the region and pledged to cooperate on scientific investigations and freely share results. 
+                    As future Cyber Security professional I want nothing more but to stand in protection of Antarctic Treaty and Scientific Committee on Antarctic Research (SCAR) from all cyber threats with potential to destroy or negatively affect work and lives of Antarctic teams of scientists.
+                    <br>
+                    To work in Antarctica, one must be a jack of many trades. I need to be able to fix hardware, code, deflect cyber-attacks, facilitate recovery, develop quick workarounds for failures, and more. This is why I sign up for every hands – on course, from programming to networks to soldering to cooking. 
+                    The reward will be -70<sup>o</sup>C and winds of more than 60 km/h and counting whales and seals, icebergs and darkness round the clock with two months of light. 
+                    <br>
+                    <br>
+                    <hr>
+                    The photos have been taken by me in March 2017 in Antarctic peninsula.
+                </p>
+             
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-8">
+                <table class="table table-hover table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Demand</th>
+                            <th>Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cyber Security</td>
+                            <td>Great</td>
+                            <td>Working on it</td>
+                        </tr>
+                        <tr>
+                            <td>Coding/Hardware</td>
+                            <td>High</td>
+                            <td>Working on it</td>
+                        </tr>
+                        <tr>
+                            <td>Networks</td>
+                            <td>High</td>
+                            <td>Working on it</td>
+                        </tr>
+                        <tr>
+                            <td>Cooking</td>
+                            <td>The Highest</td>
+                            <td>Accomplished</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-8">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
